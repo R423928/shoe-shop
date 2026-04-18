@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeMart - Best Shoe Shop in Bangladesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-shoe-prints"></i> ShoeMart</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Best Quality Shoes <br> <span>Low Price!</span></h1>
+            <p>Premium quality shoes for men, women & kids. Fast delivery all over Dinhata.</p>
+            <button class="cta-btn" onclick="scrollToProducts()">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: <span id="cart-total">৳0</span></h3>
+                <button class="checkout-btn" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content success">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-check-circle"></i> Order Placed Successfully!</h2>
+            <p>Thank you for your order. We will contact you soon.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShoeMart</h3>
+                    <p>Best quality shoes at affordable prices. Fast delivery nationwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 9002818497</p>
+                    <p><i class="fas fa-envelope"></i> atikhossaino1@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Delivery Areas</h4>
+                    <p>Dinhata, petla, atik shop, Premium & All Districts</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShoeMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
